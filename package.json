@@ -1,21 +1,21 @@
 {
-  "name": "loopback-angular-admin",
-  "subdomain": "loopback-angular-admin",
-  "description": "Quickly create admin interfaces on a Loopback 2.x API",
+  "name": "UasinGishuPortal",
+  "subdomain": "UasinGishuPortal",
+  "description": "Portal For UasinGishuPortals",
   "version": "0.1.1",
   "engines": {
     "node": "0.10.x",
     "npm": "2.1.x"
   },
-  "homepage": "https://github.com/beeman/loopback-angular-admin",
-  "author": "Bram Borggreve <borggreve@gmail.com>",
+  "homepage": "https://github.com/denzelwamburu/UasinGishuPortal",
+  "author": "Denzel Wamburu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/beeman/loopback-angular-admin"
+    "url": "https://github.com/denzelwamburu/UasinGishuPortal"
   },
   "bugs": {
-    "url": "https://github.com/beeman/loopback-angular-admin/issues"
+    "url": "https://github.com/denzelwamburu/UasinGishuPortal/issues"
   },
   "scripts": {
     "test": "mocha",
