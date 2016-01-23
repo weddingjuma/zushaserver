@@ -1,22 +1,19 @@
 {
-  "name": "Page",
-  "plural": "pages",
+  "name": "bungemember",
+  "plural": "bungemembers",
   "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "slug": {
       "type": "string"
     },
-    "content": {
+    "contacts": {
       "type": "string"
     },
-    "extended": {
+    "role": {
       "type": "string"
     }
   },

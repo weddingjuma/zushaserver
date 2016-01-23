@@ -1,22 +1,25 @@
 {
-  "name": "Page",
-  "plural": "pages",
+  "name": "bill",
+  "plural": "bills",
   "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
   "properties": {
-    "id": {
-      "type": "string"
-    },
     "name": {
-      "type": "string",
-      "required": true
-    },
-    "slug": {
       "type": "string"
     },
     "content": {
       "type": "string"
     },
-    "extended": {
+    "refno": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "type": {
       "type": "string"
     }
   },
