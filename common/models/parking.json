@@ -1,0 +1,41 @@
+{
+  "name": "parking",
+  "plural": "parkings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "vehicletype": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "typeofpayment": {
+      "type": "string",
+      "required": true
+    },
+    "vehicleregistration": {
+      "type": "string",
+      "required": true
+    },
+    "transactioncode": {
+      "type": "string"
+    },
+    "owner": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

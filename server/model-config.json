@@ -89,5 +89,21 @@
   "rent": {
     "dataSource": "db",
     "public": true
+  },
+  "parking": {
+    "dataSource": "db",
+    "public": true
+  },
+  "complaint": {
+    "dataSource": "db",
+    "public": true
+  },
+  "inquiry": {
+    "dataSource": "db",
+    "public": true
+  },
+  "suggest": {
+    "dataSource": "db",
+    "public": true
   }
 }
