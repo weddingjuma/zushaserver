@@ -34,7 +34,7 @@
         gettextCatalog.setCurrentLanguage($scope.locale.lang);
       };
 
-      $scope.appName = 'LoopBack Admin';
+      $scope.appName = 'UasinGishu Portal';
       $scope.apiUrl = CoreService.env.apiUrl;
       $scope.appTheme = 'skin-blue';
       $scope.appThemes = [

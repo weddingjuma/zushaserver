@@ -16,8 +16,10 @@
       $scope.registration = {
         firstName: '',
         lastName: '',
+        phonenumber: '',
         email: '',
-        password: ''
+        password: '',
+
       };
 
       $scope.schema = [{
@@ -45,6 +47,20 @@
         msgs: {
           minlength: gettextCatalog.getString(
             'Needs to have at least 4 characters')
+        }
+      },
+      {
+        label: '',
+        property: 'phonenumber',
+        placeholder: gettextCatalog.getString('Phone Number'),
+        type: 'number',
+        attr: {
+          ngMinlength: 9,
+          required: true
+        },
+        msgs: {
+          minlength: gettextCatalog.getString(
+            'Enter A Valid Phone Number')
         }
       }, {
         label: '',
