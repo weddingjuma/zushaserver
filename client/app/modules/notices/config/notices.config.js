@@ -3,10 +3,10 @@
   angular
     .module('com.module.notices')
     .run(function ($rootScope, Notice, gettextCatalog) {
-      $rootScope.addMenu(gettextCatalog.getString('Notices'), 'app.notices.list', 'fa-calendar-o');
+      $rootScope.addMenu(gettextCatalog.getString('Notices'), 'app.notices.list', 'ion-clipboard');
 
       Notice.find(function (data) {
-        $rootScope.addDashboardBox('Notices', 'bg-purple', 'ion-calendar', data.length, 'app.notices.list');
+        $rootScope.addDashboardBox('Notices', 'bg-yellow', 'ion-clipboard', data.length, 'app.notices.list');
       });
 
     });
