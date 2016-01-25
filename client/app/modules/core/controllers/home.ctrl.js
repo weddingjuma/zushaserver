@@ -9,9 +9,13 @@
    **/
   angular
     .module('com.module.core')
-    .controller('HomeCtrl', function ($scope, $rootScope) {
+    .controller('HomeCtrl', function ($scope, $rootScope, $location) {
       $scope.count = {};
       $scope.boxes = $rootScope.dashboardBox;
+
+      $scope.goToUsers = function () {
+          $location.path('app.users');
+      };
     });
 
 })();
