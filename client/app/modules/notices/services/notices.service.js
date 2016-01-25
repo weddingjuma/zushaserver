@@ -14,7 +14,7 @@
         }).$promise;
       };
 
-      this.upsertNotice = function (Notice) {
+      this.upsertNotice = function (notice) {
         return Notice.upsert(notice).$promise
           .then(function () {
             CoreService.toastSuccess(

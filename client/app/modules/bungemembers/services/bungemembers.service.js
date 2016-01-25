@@ -36,7 +36,7 @@
           gettextCatalog.getString('Are you sure?'),
           gettextCatalog.getString('Deleting this cannot be undone'),
           function () {
-            BungeMember.deleteById({id: id}, function () {
+            Bungemember.deleteById({id: id}, function () {
               CoreService.toastSuccess(
                 gettextCatalog.getString('Bunger Member deleted'),
                 gettextCatalog.getString('Your Bunger Member is deleted!'));

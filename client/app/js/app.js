@@ -51,10 +51,12 @@
       'com.module.settings',
       'com.module.users',
       'ng-mfb',
-      'com.module.notices',
       'com.module.bills',
-       'com.module.notices',
-       'com.module.bungemembers'
+      'com.module.bungemembers',
+      'com.module.notices'
+
+
+
 
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
