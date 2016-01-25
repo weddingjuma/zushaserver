@@ -74,10 +74,18 @@
             }
           },
           {
+            key: 'phonenumber',
+            type: 'input',
+            templateOptions: {
+              label: gettextCatalog.getString('PhoneNumber'),
+              required: true
+            }
+          },
+          {
             key: 'firstName',
             type: 'input',
             templateOptions: {
-              label: gettextCatalog.getString('Last name'),
+              label: gettextCatalog.getString('First Name'),
               required: true
             }
           },
