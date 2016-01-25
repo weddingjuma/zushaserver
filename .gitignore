@@ -19,3 +19,4 @@ client/coverage
 .cache
 .config
 .npm
+js

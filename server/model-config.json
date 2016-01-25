@@ -105,5 +105,9 @@
   "suggest": {
     "dataSource": "db",
     "public": true
+  },
+  "notice": {
+    "dataSource": "db",
+    "public": true
   }
 }

@@ -13,11 +13,11 @@
           url: '',
           templateUrl: 'modules/bungemembers/views/list.html',
           controllerAs: 'ctrl',
-          controller: function (events) {
+          controller: function (bungemembers) {
             this.bungemembers = bungemembers;
           },
           resolve: {
-            events: function (BungemembersService) {
+            bungemembers: function (BungemembersService) {
               return BungemembersService.getBungemembers();
             }
           }
@@ -26,12 +26,12 @@
           url: '/add',
           templateUrl: 'modules/bungemembers/views/form.html',
           controllerAs: 'ctrl',
-          controller: function ($state, EventsService, event) {
+          controller: function ($state, BungemembersService, bungemember) {
             this.bungemember = bungemember;
             this.formFields = BungemembersService.getFormFields();
             this.formOptions = {};
             this.submit = function () {
-              EventsService.upsertBungemember(this.bungemember).then(function () {
+              BungemembersService.upsertBungemember(this.bungemember).then(function () {
                 $state.go('^.list');
               });
             };
@@ -46,19 +46,19 @@
           url: '/:id/edit',
           templateUrl: 'modules/bungemembers/views/form.html',
           controllerAs: 'ctrl',
-          controller: function ($state, BungemembersService, event) {
+          controller: function ($state, BungemembersService, bungemember) {
             console.log(bungemember);
             this.bungemember = bungemember;
             this.formFields = BungemembersService.getFormFields();
             this.formOptions = {};
             this.submit = function () {
-              EventsService.upsertEvent(this.bungemember).then(function () {
+              BungemembersService.upsertBungemember(this.bungemember).then(function () {
                 $state.go('^.list');
               });
             };
           },
           resolve: {
-            event: function ($stateParams, BungemembersService) {
+            bungemember: function ($stateParams, BungemembersService) {
               return BungemembersService.getBungemember($stateParams.id);
             }
           }
@@ -80,16 +80,16 @@
           url: '/:id/delete',
           template: '',
           controllerAs: 'ctrl',
-          controller: function ($state, EventsService, event) {
-            EventsService.deleteEvent(bungemember.id, function () {
+          controller: function ($state, BungemembersService, bungemember) {
+            BungemembersService.deleteBungemember(bungemember.id, function () {
               $state.go('^.list');
             }, function () {
               $state.go('^.list');
             });
           },
           resolve: {
-            event: function ($stateParams, EventsService) {
-              return EventsService.getBungemember($stateParams.id);
+            bungemember: function ($stateParams, BungemembersService) {
+              return BungemembersService.getBungemember($stateParams.id);
             }
           }
         });

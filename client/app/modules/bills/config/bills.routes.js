@@ -17,7 +17,7 @@
             this.bills = bills;
           },
           resolve: {
-            bills: function (BillService) {
+            bills: function (BillsService) {
               return BillsService.getBills();
             }
           }
