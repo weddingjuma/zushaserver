@@ -2,20 +2,13 @@
 <html ng-app="loopbackApp" ng-controller="LayoutCtrl">
 <head>
   <meta charset="utf-8">
-<!--  <title>Admin: {{ getSetting('appName') }}</title> -->
-  <title>UasinGishuPortal</title>
-
+  <title>Admin: {{ getSetting('appName') }}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width">
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
- <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css">
-  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.min.css">
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" href="bower_components/angular-toasty/css/ng-toasty.css" />
   <link rel="stylesheet" href="bower_components/sweetalert/lib/sweet-alert.css" />
@@ -27,14 +20,15 @@
   <link rel="stylesheet" href="bower_components/flag-icon-css/css/flag-icon.min.css" />
   <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.css" />
   <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
   <link rel="stylesheet" href="bower_components/ng-material-floating-button/mfb/dist/mfb.css" />
-
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="/css/AdminLTE.css" />
   <link rel="stylesheet" href="/css/main.css" />
-
+  
   <!-- endbuild -->
 </head>
 <body class="{{getSetting('appTheme') }} {{ getSetting('appLayout') }} " ng-controller="MainCtrl">
@@ -122,9 +116,10 @@
 <script src="bower_components/angular-schema-form-ui-select/ui-sortable.js"></script>
 <script src="bower_components/angular-schema-form-ui-select/angular-underscore.js"></script>
 <script src="bower_components/angular-schema-form-ui-select/bootstrap-ui-select.min.js"></script>
-<script src="bower_components/ng-material-floating-button/src/mfb-directive.js"/></script>
-
-
+<script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+<script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+<script src="bower_components/ng-material-floating-button/src/mfb-directive.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 <!-- build:js scripts/scripts.js -->
@@ -163,10 +158,6 @@
 <script src="/modules/events/config/events.config.js"></script>
 <script src="/modules/events/config/events.routes.js"></script>
 <script src="/modules/events/services/events.service.js"></script>
-<script src="/modules/notices/app.notices.js"></script>
-<script src="/modules/notices/config/notices.config.js"></script>
-<script src="/modules/notices/config/notices.routes.js"></script>
-<script src="/modules/notices/services/notices.service.js"></script>
 <script src="/modules/files/app.files.js"></script>
 <script src="/modules/files/config/file.config.js"></script>
 <script src="/modules/files/config/file.routes.js"></script>
@@ -175,6 +166,10 @@
 <script src="/modules/notes/config/notes.config.js"></script>
 <script src="/modules/notes/config/notes.routes.js"></script>
 <script src="/modules/notes/services/notes.service.js"></script>
+<script src="/modules/notices/app.notices.js"></script>
+<script src="/modules/notices/config/notices.config.js"></script>
+<script src="/modules/notices/config/notices.routes.js"></script>
+<script src="/modules/notices/services/notices.service.js"></script>
 <script src="/modules/pages/app.pages.js"></script>
 <script src="/modules/pages/config/pages.config.js"></script>
 <script src="/modules/pages/config/pages.routes.js"></script>
