@@ -49,7 +49,7 @@
       'com.module.products',
       'com.module.sandbox',
       'com.module.settings',
-      'com.module.users', 'ng-mfb',       'com.module.notices',
+      'com.module.users', 'ng-mfb', 'com.module.notices', 'com.module.bills'
 
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
