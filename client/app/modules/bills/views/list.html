@@ -21,11 +21,11 @@
       <h4 class="list-group-item-heading">
         <a href="" ui-sref="^.view({id: item.id})">{{item.name}}</a>
       </h4>
-<!--
+
       <p class="list-group-item-text">
-        {{item.startDate | date:'medium'}}
-        <span ng-if="item.endDate"> - {{item.endDate | date:'medium'}}</span>
-      </p> -->
+<small>RefNo.:</small>
+  <strong>{{item.refno}} </strong>
+      </p>
     </div>
     <div ng-show="!ctrl.bills.length" class="list-group-item">
       <h4 class="list-group-item-heading" translate>
@@ -36,4 +36,8 @@
     </div>
   </div>
 
+  <nav mfb-menu position="br" effect="fountain" label="Add"
+     resting-icon="ion-plus-round" href="" ui-sref="^.add()">
+
+</nav>
 </div>
