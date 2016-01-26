@@ -2,7 +2,7 @@
   'use strict';
   angular
     .module('com.module.notes')
-    .run(function ($rootScope, Note, gettextCatalog) {
+/**    .run(function ($rootScope, Note, gettextCatalog) {
       $rootScope.addMenu(gettextCatalog.getString('Notes'), 'app.notes.list', 'fa-file-o');
 
       Note.find(function (data) {
@@ -10,5 +10,5 @@
       });
 
     });
-
+ **/
 })();
