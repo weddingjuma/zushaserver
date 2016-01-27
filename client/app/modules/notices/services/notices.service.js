@@ -57,18 +57,18 @@
       this.getFormFields = function () {
         return [
           {
-            key: 'name',
+            key: 'title',
             type: 'input',
             templateOptions: {
-              label: gettextCatalog.getString('Name'),
+              label: gettextCatalog.getString('Title'),
               required: true
             }
           },
           {
-            key: 'description',
+            key: 'content',
             type: 'textarea',
             templateOptions: {
-              label: gettextCatalog.getString('Description'),
+              label: gettextCatalog.getString('Content'),
               required: true
             }
           },
@@ -101,7 +101,24 @@
             templateOptions: {
               label: gettextCatalog.getString('End Time')
             }
-          }
+          },
+          {
+            key: 'location',
+            type: 'input',
+            templateOptions: {
+              label: gettextCatalog.getString('Location'),
+              required: true
+            }
+            },
+            {
+              key: 'author',
+              type: 'input',
+              templateOptions: {
+                label: gettextCatalog.getString('By'),
+                required: true
+              }
+            }
+          
         ];
       };
 

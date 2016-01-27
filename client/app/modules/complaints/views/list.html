@@ -1,6 +1,6 @@
 <div class="panel panel-default">
   <div class="panel-heading">
-    Notices
+    Complaints
   <!--  <span class="pull-right btn-group">
       <a href="" class="btn btn-xs btn-success" ui-sref="^.add()">
         <i class="fa fa-plus"></i>
@@ -9,7 +9,7 @@
   </div>
 
   <div class='list-group'>
-    <div ng-repeat="item in ctrl.notices" class="list-group-item">
+    <div ng-repeat="item in ctrl.complaints" class="list-group-item">
      <span class="pull-right btn-group">
       <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({id: item.id})">
         <i class="fa fa-pencil"></i>
@@ -23,16 +23,15 @@
       </h4>
 
       <p class="list-group-item-text">
-        {{item.startDate | date:'medium'}}
-        <span ng-if="item.endDate"> - {{item.endDate | date:'medium'}}</span>
+        {{item.date | date:'medium'}}
       </p>
     </div>
-    <div ng-show="!ctrl.notices.length" class="list-group-item">
+    <div ng-show="!ctrl.complaints.length" class="list-group-item">
       <h4 class="list-group-item-heading" translate>
-        There are no Notices
+        There are no Complaints :)
       </h4>
 
-      <p class="list-group-item-text" translate>Click <a href="" ui-sref="^.add">here</a> to add a Notice!</p>
+      <p class="list-group-item-text" translate>Click <a href="" ui-sref="^.add">here</a> to add a Complaint</p>
     </div>
   </div>
   <nav mfb-menu position="br" effect="fountain" label="Add"
