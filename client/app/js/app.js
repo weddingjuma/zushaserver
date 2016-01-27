@@ -53,11 +53,8 @@
       'ng-mfb',
       'com.module.bills',
       'com.module.bungemembers',
-      'com.module.notices'
-
-
-
-
+      'com.module.notices',
+      'com.module.complaints'
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
 
