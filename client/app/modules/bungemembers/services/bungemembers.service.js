@@ -57,7 +57,7 @@
       this.getFormFields = function () {
         return [
           {
-            key: 'fullnames',
+            key: 'name',
             type: 'input',
             templateOptions: {
               label: gettextCatalog.getString('FullNames'),
@@ -69,6 +69,22 @@
             type: 'textarea',
             templateOptions: {
               label: gettextCatalog.getString('Description'),
+              required: true
+            }
+          },
+          {
+            key: 'role',
+            type: 'input',
+            templateOptions: {
+              label: gettextCatalog.getString('Role'),
+              required: true
+            }
+          },
+          {
+            key: 'contacts',
+            type: 'input',
+            templateOptions: {
+              label: gettextCatalog.getString('Contacts'),
               required: true
             }
           }
