@@ -6,7 +6,7 @@
       $rootScope.addMenu(gettextCatalog.getString('Notices'), 'app.notices.list', 'ion-clipboard');
 
       Notice.find(function (data) {
-        $rootScope.addDashboardBox('Notices', 'bg-yellow', 'ion-clipboard', data.length, 'app.notices.list');
+        $rootScope.addDashboardBox('Notices', 'bg-teal', 'ion-clipboard', data.length, 'app.notices.list');
       });
 
     });

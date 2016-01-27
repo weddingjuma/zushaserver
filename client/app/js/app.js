@@ -55,7 +55,8 @@
       'com.module.bungemembers',
       'com.module.notices',
       'com.module.complaints',
-      'com.module.inquiries'
+      'com.module.inquiries',
+      'com.module.rents'
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
 
