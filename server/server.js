@@ -9,11 +9,12 @@ var env = require('get-env')({
 });
 
 //init pesapaljs
+/**
 var PesaPal = require('pesapaljs').init({
     key: "s9wWRUjVSuzqvZIoVDzxOsjgNdmWwoAR",
     secret: "fe9iGVCH8YkJGL9G5V1epBh7zrQ=",
     debug: true // false in production!
-});
+}); **/
 
 // Set up the /favicon.ico
 app.use(loopback.favicon());
@@ -40,7 +41,7 @@ if (env !== 'prod') {
   console.log("Running app in development mode");
 } else {
   staticPath = path.resolve(__dirname, '../dist/');
-  console.log("Running app in prodction mode");
+  console.log("Running app in production mode");
 }
 
 app.use(loopback.static(staticPath));
