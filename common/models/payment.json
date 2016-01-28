@@ -1,19 +1,25 @@
 {
-  "name": "bungemember",
-  "plural": "bungemembers",
+  "name": "payment",
+  "plural": "payments",
   "base": "PersistedModel",
   "idInjection": true,
   "options": {
     "validateUpsert": true
   },
   "properties": {
-    "name": {
+    "firstName": {
       "type": "string"
     },
-    "contacts": {
+    "lastName": {
       "type": "string"
     },
-    "role": {
+    "email": {
+      "type": "string"
+    },
+    "transactioncode": {
+      "type": "string"
+    },
+    "reference": {
       "type": "string"
     }
   },

@@ -2,7 +2,11 @@
   "name": "user",
   "plural": "users",
   "base": "User",
-  "properties": {},
+  "properties": {
+    "idno": {
+      "type": "number"
+    }
+  },
   "validations": [],
   "relations": {
     "accessTokens": {

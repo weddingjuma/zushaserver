@@ -109,5 +109,9 @@
   "notice": {
     "dataSource": "db",
     "public": true
+  },
+  "payment": {
+    "dataSource": "db",
+    "public": true
   }
 }
