@@ -113,5 +113,9 @@
   "payment": {
     "dataSource": "db",
     "public": true
+  },
+  "transaction_consumer": {
+    "dataSource": "db",
+    "public": true
   }
 }

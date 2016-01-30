@@ -1,0 +1,58 @@
+{
+  "name": "transaction_consumer",
+  "plural": "transaction_consumers",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "service_name": {
+      "type": "string"
+    },
+    "business_number": {
+      "type": "number"
+    },
+    "transaction_reference": {
+      "type": "string"
+    },
+    "internal_transaction_id": {
+      "type": "string"
+    },
+    "transaction_timestamp": {
+      "type": "string"
+    },
+    "transaction_type": {
+      "type": "string"
+    },
+    "account_number": {
+      "type": "number"
+    },
+    "sender_phone": {
+      "type": "number"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "middle_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "required": true
+    },
+    "currency": {
+      "type": "string"
+    },
+    "signature": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

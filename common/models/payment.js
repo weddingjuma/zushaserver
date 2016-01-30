@@ -17,7 +17,7 @@ Payment.details = function (details) {
 
 var options = {
     reference: new Date().getTime(),
-    transaction: "175c6485-0948-4cb9-8d72-05a2c3f25be5" // or both.
+    transaction: transactioncode // or both.
 };
 PesaPal.getPaymentStatus(options, function(error, status){
   if(error) {
