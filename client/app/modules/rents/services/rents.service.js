@@ -71,7 +71,7 @@
               label: gettextCatalog.getString('Owner'),
               required: true
             }
-          }
+          },
           {
             key: 'content',
             type: 'textarea',
