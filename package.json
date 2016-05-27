@@ -7,15 +7,15 @@
     "node": "0.10.x",
     "npm": "2.1.x"
   },
-  "homepage": "https://github.com/denzelwamburu/UasinGishuPortal",
+  "homepage": "https://github.com/denzelwamburu/ZushaServer",
   "author": "Denzel Wamburu",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/denzelwamburu/UasinGishuPortal"
+    "url": "https://github.com/denzelwamburu/ZushaServer"
   },
   "bugs": {
-    "url": "https://github.com/denzelwamburu/UasinGishuPortal/issues"
+    "url": "https://github.com/denzelwamburu/ZushaServer/issues"
   },
   "scripts": {
     "test": "mocha",

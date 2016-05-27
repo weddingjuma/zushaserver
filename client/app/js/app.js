@@ -50,13 +50,13 @@
       'com.module.sandbox',
       'com.module.settings',
       'com.module.users',
-      'ng-mfb',
-      'com.module.bills',
-      'com.module.bungemembers',
-      'com.module.notices',
-      'com.module.complaints',
-      'com.module.inquiries',
-      'com.module.rents'
+      'ng-mfb'
+      // 'com.module.bills',
+      // 'com.module.bungemembers',
+      // 'com.module.notices',
+      // 'com.module.complaints',
+      // 'com.module.inquiries',
+      // 'com.module.rents'
     ])
     .run(function ($rootScope, $cookies, gettextCatalog) {
 

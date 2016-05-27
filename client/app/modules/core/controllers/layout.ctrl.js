@@ -34,7 +34,7 @@
         gettextCatalog.setCurrentLanguage($scope.locale.lang);
       };
 
-      $scope.appName = 'UasinGishu Portal';
+      $scope.appName = 'NTSA Portal';
       $scope.apiUrl = CoreService.env.apiUrl;
       $scope.appTheme = 'skin-blue';
       $scope.appThemes = [
