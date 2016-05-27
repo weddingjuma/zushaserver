@@ -1,2 +1,2 @@
 ## Zusha Server
-Portal for UasinGishu County.
+Proper Way of Not OverSpeeding, The NTSA Way :warning: :rotating_light:
