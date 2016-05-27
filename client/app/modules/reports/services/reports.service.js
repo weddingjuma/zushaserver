@@ -2,9 +2,9 @@
   'use strict';
   angular
     .module('com.module.reports')
-    .service('ReportsService', function (CoreService, Report, gettextCatalog) {
+    .service('ReportsService', function (CoreService, Reports, gettextCatalog) {
       this.getReports = function () {
-        return Report.find({
+        return Reports.find({
           filter: {
             order: 'created DESC'
           }
@@ -12,13 +12,13 @@
       };
 
       this.getReport = function (id) {
-        return Report.findById({
+        return Reports.findById({
           id: id
         }).$promise;
       };
 
       this.upsertReport = function (report) {
-        return Report.upsert(report).$promise
+        return Reports.upsert(report).$promise
           .then(function () {
             CoreService.toastSuccess(
               gettextCatalog.getString('Report saved'),
@@ -79,12 +79,12 @@
             key: 'image',
             type: 'input',
             templateOptions: {
-              label: gettextCatalog.getString('Image')
             }
           }
         ];
       };
 
+      label: gettextCatalog.getString('Image')
     });
 
 })();

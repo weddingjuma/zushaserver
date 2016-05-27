@@ -29,12 +29,12 @@
           url: '/add',
           templateUrl: 'modules/reports/views/form.html',
           controllerAs: 'ctrl',
-          controller: function ($state, ReportsService, report) {
-            this.report = report;
+          controller: function ($state, ReportsService, reports) {
+            this.reports = reports;
             this.formFields = ReportsService.getFormFields();
             this.formOptions = {};
             this.submit = function () {
-              ReportsService.upsertReport(this.report).then(function () {
+              ReportsService.upsertReport(this.reports).then(function () {
                 $state.go('^.list');
               });
             };
@@ -49,7 +49,7 @@
           url: '/:id/edit',
           templateUrl: 'modules/reports/views/form.html',
           controllerAs: 'ctrl',
-          controller: function ($state, ReportsService, report) {
+          controller: function ($state, ReportsService, reports) {
             console.log(report);
             this.report = report;
             this.formFields = ReportsService.getFormFields();
@@ -70,8 +70,8 @@
           url: '/:id',
           templateUrl: 'modules/reports/views/view.html',
           controllerAs: 'ctrl',
-          controller: function (report) {
-            this.report = report;
+          controller: function (reports) {
+            this.reports = reports;
           },
           resolve: {
             report: function ($stateParams, ReportsService) {
@@ -83,7 +83,7 @@
           url: '/:id/delete',
           template: '',
           controllerAs: 'ctrl',
-          controller: function ($state, ReportsService, report) {
+          controller: function ($state, ReportsService, reports) {
             ReportsService.deleteReport(report.id, function () {
               $state.go('^.list');
             }, function () {
