@@ -30,6 +30,12 @@
     },
     "speed": {
       "type": "string"
+    },
+    "driverstate": {
+      "type": "string"
+    },
+    "carstate": {
+      "type": "string"
     }
   },
   "validations": [],
