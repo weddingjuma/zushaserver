@@ -117,5 +117,9 @@
   "transaction_consumer": {
     "dataSource": "db",
     "public": true
+  },
+  "reports": {
+    "dataSource": "db",
+    "public": true
   }
 }
