@@ -1,7 +1,7 @@
 {
-  "name": "UasinGishuPortal",
-  "subdomain": "UasinGishuPortal",
-  "description": "Portal For UasinGishuPortals",
+  "name": "ZushaServer",
+  "subdomain": "ZushaServer",
+  "description": "Proper Way of Not OverSpeeding, The NTSA Way",
   "version": "0.1.1",
   "engines": {
     "node": "0.10.x",

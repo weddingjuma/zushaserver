@@ -1,2 +1,2 @@
-## UasinGishu Portal
+## Zusha Server
 Portal for UasinGishu County.
