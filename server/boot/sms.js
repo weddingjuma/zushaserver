@@ -1,4 +1,4 @@
-var require('dotenv').config();
+var dotenv = require('dotenv').config();
 var loopback = require('loopback');
 module.exports = function(app) {
   var options = {
