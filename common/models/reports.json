@@ -36,6 +36,9 @@
     },
     "carstate": {
       "type": "string"
+    },
+    "problem": {
+      "type": "string"
     }
   },
   "validations": [],
