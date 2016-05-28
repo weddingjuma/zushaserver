@@ -121,5 +121,9 @@
   "reports": {
     "dataSource": "db",
     "public": true
+  },
+  "smsed": {
+    "dataSource": "db",
+    "public": true
   }
 }

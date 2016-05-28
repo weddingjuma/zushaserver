@@ -1,0 +1,28 @@
+{
+  "name": "smsed",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "from": {
+      "type": "string"
+    },
+    "to": {
+      "type": "number"
+    },
+    "date": {
+      "type": [
+        "string"
+      ]
+    },
+    "id": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
