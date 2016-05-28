@@ -11,25 +11,27 @@
   <div class='list-group'>
 
     <div ng-repeat="item in ctrl.reports.slice().reverse()" class="list-group-item">
-     <span class="pull-right btn-group">
-      <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({id: item.id})">
-        <i class="fa fa-pencil"></i>
-      </a>
-      <a href="" class="btn btn-xs btn-danger" ui-sref="^.delete({id: item.id})">
-        <i class="fa fa-trash-o"></i>
-      </a>
-    </span>
-      <h4 class="list-group-item-heading">
-        <a href="" ui-sref="^.view({id: item.id})">{{item.numberplate}}</a>
-        <br/>
-        <small>
-          Location:
-          {{item.date | date:'medium'}}
-            <span ng-if="item.created !== item.modified">
-              &middot; modified:
-              {{item.modified | date:'medium'}}
-            </span>
-        </small>
+      <span class="pull-right btn-group">
+       <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({id: item.id})">
+         <i class="fa fa-pencil"></i>
+       </a>
+       <a href="" class="btn btn-xs btn-danger" ui-sref="^.delete({id: item.id})">
+         <i class="fa fa-trash-o"></i>
+       </a>
+     </span>
+       <h4 class="list-group-item-heading">
+         <a href="" ui-sref="^.view({id: item.id})">{{item.numberplate}}</a>
+       </h4>
+
+
+         <blockquote>
+           <span> {{item.from}}</span>  <small>To</small> <span>{{item.to}}</span>
+           <footer>Posted at
+  <cite title=" {{item.date | date:'medium'}}"><b> {{item.date | date:'medium'}}</b></cite>
+</footer>
+
+ </blockquote>
+
       </h4>
 
       <!-- <div class="box-body">

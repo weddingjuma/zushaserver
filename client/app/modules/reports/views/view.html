@@ -1,7 +1,7 @@
 <div class="panel panel-default">
   <div class="panel-heading">
     <a href="" ui-sref="^.list" class="btn btn-xs btn-default"><i class="fa fa-arrow-left"></i></a>
-    {{ctrl.report.title}}
+    {{ctrl.reports.title}}
     <span class="pull-right btn-group">
       <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({id: ctrl.report.id})">
         <i class="fa fa-pencil"></i>
@@ -13,19 +13,19 @@
   </div>
   <div class="panel-body">
     <div class="row">
-      <div class="col-sm-10" style="white-space: pre;">{{ctrl.report.content}}</div>
+      <div class="col-sm-10" style="white-space: pre;">{{ctrl.report.id}}</div>
       <div class="col-sm-2">
-        <img ng-if="ctrl.report.image" ng-src="{{ctrl.report.image}}?id={{ctrl.report.id}}"/>
+        <img ng-if="ctrl.report.image" ng-src="{{ctrl.reports.image}}?id={{ctrl.reports.id}}"/>
       </div>
     </div>
   </div>
   <div class="panel-footer">
     <small>
       Created:
-      {{ctrl.report.created | date:'medium'}}
-      <span ng-if="ctrl.report.created !== ctrl.report.modified">
+      {{ctrl.reports.created | date:'medium'}}
+      <span ng-if="ctrl.reports.created !== ctrl.reports.modified">
         &middot; modified:
-        {{ctrl.report.modified | date:'medium'}}
+        {{ctrl.reports.modified | date:'medium'}}
       </span>
     </small>
   </div>

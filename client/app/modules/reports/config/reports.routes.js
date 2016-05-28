@@ -70,8 +70,8 @@
           url: '/:id',
           templateUrl: 'modules/reports/views/view.html',
           controllerAs: 'ctrl',
-          controller: function (reports) {
-            this.reports = reports;
+          controller: function (report) {
+            this.report = report;
           },
           resolve: {
             report: function ($stateParams, ReportsService) {
