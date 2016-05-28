@@ -1,0 +1,45 @@
+{
+  "name": "reports",
+  "plural": "reports",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    },
+    "by": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string"
+    },
+    "to": {
+      "type": "string"
+    },
+    "numberplate": {
+      "type": "string"
+    },
+    "sacco": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "string"
+    },
+    "driverstate": {
+      "type": "string"
+    },
+    "carstate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
