@@ -12,7 +12,8 @@ module.exports = function(app) {
     keyword: '101',
     linkId: 'www.zusha.co.ke',
     to: "254704654445",
-    message: 'Server is Spinning'
+    message: 'Server is Spinning',
+    lastReceivedId: 2
   };
   console.log(opts);
 
@@ -38,8 +39,8 @@ module.exports = function(app) {
   sms.fetchMessages(opts)
     .then(function(s) {
       var jsoned = {};
-      jsoned = JSON.stringify(s);
-      console.log(jsoned);
+      // jsoned = JSON.stringify(s);
+      console.log(s.SMSMessageData.Messages[0].to);
     })
     .catch(function(error) {
       console.log(error);
