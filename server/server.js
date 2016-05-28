@@ -7,6 +7,7 @@ var app = module.exports = loopback();
 var env = require('get-env')({
   test: 'test'
 });
+var require('dotenv').config();
 
 //init pesapaljs
 /**
