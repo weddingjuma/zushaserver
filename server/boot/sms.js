@@ -37,7 +37,9 @@ module.exports = function(app) {
   /* Retrieve SMS from the Senders */
   sms.fetchMessages(opts)
     .then(function(s) {
-      console.log(JSON.stringify(s));
+      var jsoned = {};
+      jsoned = JSON.stringify(s);
+      console.log(jsoned);
     })
     .catch(function(error) {
       console.log(error);
