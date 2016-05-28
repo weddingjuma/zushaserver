@@ -90,6 +90,7 @@
     "passport-oauth2": "1.1.2",
     "passport-twitter": "1.0.2",
     "pesapaljs": "0.0.3",
+    "request": "^2.72.0",
     "serve-favicon": "2.2.0",
     "showdown": "0.3.1",
     "time-grunt": "1.0.0"
