@@ -10,7 +10,7 @@
 
   <div class='list-group'>
 
-    <div ng-repeat="item in ctrl.reports" class="list-group-item">
+    <div ng-repeat="item in ctrl.reports.slice().reverse()" class="list-group-item">
      <span class="pull-right btn-group">
       <a href="" class="btn btn-xs btn-default" ui-sref="^.edit({id: item.id})">
         <i class="fa fa-pencil"></i>
@@ -20,11 +20,11 @@
       </a>
     </span>
       <h4 class="list-group-item-heading">
-        <a href="" ui-sref="^.view({id: item.id})">{{item.title}}</a>
+        <a href="" ui-sref="^.view({id: item.id})">{{item.numberplate}}</a>
         <br/>
         <small>
-          Created:
-          {{item.created | date:'medium'}}
+          Location:
+          {{item.date | date:'medium'}}
             <span ng-if="item.created !== item.modified">
               &middot; modified:
               {{item.modified | date:'medium'}}
@@ -32,14 +32,14 @@
         </small>
       </h4>
 
-      <div class="box-body">
+      <!-- <div class="box-body">
         <div class="row">
-          <div class="col-sm-10" style="white-space: pre;">{{item.content}}</div>
+          <div class="col-sm-10" style="white-space: pre;">{{item.numberplate}}</div>
           <div class="col-sm-2">
             <img ng-if="item.image" ng-src="{{item.image}}?id={{item.id}}"/>
           </div>
         </div>
-      </div>
+      </div> -->
 
     </div>
 
